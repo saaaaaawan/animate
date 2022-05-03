@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.navbar .navlink{
+  color:black;
+}
+
+.navbar-brand h1 {
+	font-weight: 700;
+}
+
+.navbar .weight-size{
+	font-weight: 700;
+	font-size: 20px;
+}
+
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+    .nav-light {
+        position: relative;
+        background: #FFFFFF;
+    }
+}
+@media (min-width: 992px) {
+    .nav-light {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+
+    }
+}
+
+@media (min-width: 992px){
+   nav {
+    background-color :#7ebc12;
+        color:white;
+    }
+}
+
+@media(max-width: 552px){
+
+.main-bg h1{
+    font-size:30px;
+}
+}
+
+.hero-header {
+    background:
+        url(../img/bg-round.png),
+        url(../img/bg-round-2.png),
+        url(../img/bg-square.png),
+        url(../img/bg-line.png),
+        url(../img/bg-bottom-hero.png);
+    background-position:
+        0px 40%,
+        right 0 top 0,
+        left 50% top 0,
+        left 50% top 50%,
+        center bottom -1px;
+    background-repeat: no-repeat;
+}
