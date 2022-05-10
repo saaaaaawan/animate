@@ -6,7 +6,8 @@
 }
 
 .navbar li{
-   padding:10px;  
+   padding:10px; 
+
 }
 
 .navbar .navlink{
@@ -82,6 +83,9 @@
 }
 }
 
+nav {
+    z-index: 1;
+}
 .hero-header {
     background:
         url(../img/bg-round.png),
