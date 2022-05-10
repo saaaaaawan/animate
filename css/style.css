@@ -1,21 +1,28 @@
 * {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar li{
+   padding:10px;  
 }
 
 .navbar .navlink{
   color:black;
+  transition: .5s;
+  font-size: 18px;
+  padding:19px;
 }
 
 .navbar-brand h1 {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 .navbar .weight-size{
-	font-weight: 700;
-	font-size: 20px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 
@@ -34,8 +41,9 @@
 
 @media (max-width: 991.98px) {
     .nav-light {
-        position: relative;
+        position: fixed;
         background: #FFFFFF;
+        width:100%;
     }
 }
 @media (min-width: 992px) {
@@ -47,11 +55,22 @@
         z-index: 999;
 
     }
+
+  .sticky-top.nav-light {
+        position: fixed;
+        background: #FFFFFF;
+    }
+
+    .sticky-top.navbar-light .navbar-brand h1 {
+        
+    }   
 }
+
+
 
 @media (min-width: 992px){
    nav {
-    background-color :#7ebc12;
+    
         color:white;
     }
 }
@@ -78,3 +97,176 @@
         center bottom -1px;
     background-repeat: no-repeat;
 }
+
+
+.domain {
+    background: url(../img/bg-domain.png) center center no-repeat;
+    background-size: contain;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 11px;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #5A5A5A;
+    border-bottom: 1px solid #5A5A5A;
+}
+.section-title.text-center::before {
+    left: 50%;
+    margin-left: -30px;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 1px;
+    bottom: 5px;
+    left: 0;
+    background:green;
+}
+
+.section-title.text-center::after {
+    width: 120px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.comparision .section-title h1 {
+ font-size: 25p;
+ margin-bottom: 20px;
+}
+
+.comparision .section-title {
+    max-width: 600px
+}
+
+@media(min-width:992px)
+{
+.comparision .border-lg-end {
+    border-right: 1px solid #DDDDDD
+}
+}
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    transition: .5s;
+
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--primary) !important;
+    border-color: var(--secondary) !important;
+    z-index: 1;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 75%) !important;
+    zoom: 100%;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item .position-absolute {
+    background: var(--secondary) !important;
+}
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: #FFFFFF;
+    font-size:;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item h6 {
+    color: var(--dark) !important;
+}
+
+.testimonial-carousel .owl-dots {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #DDDDDD;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--primary);
+}
+
+ .testimonial-carousel .owl-item.center .testimonial-item .align-items-center img {
+transform: scale(1.3);
+}
+
+/** testimonial ends **/
+
+ .team-content:hover .card-tap {
+    background: var(--secondary) !important;
+   
+
+}
+
+.team-content:hover .text-primary {
+color: var(--secondary) !important;
+}
+
+.team-content:hover .border-primary {
+    border-color:  var(--secondary) !important; ;
+}
+
+.card-tap {
+    transition: .5s
+}
+
+.team-content{
+    transition: 0.5s;
+}
+.team-content:hover{
+   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 75%) ;
+
+}
+
+:root {
+    --primary: #7EBC12;
+    --secondary: #FF0F10;
+    --light: #F2F2F2;
+    --dark: #1D2833;
+}
+
+
+.footer {
+    background: url(../img/bg-round.png), url(../img/bg-round-2.png), url(../img/bg-square.png), url(../img/bg-line.png), url(../img/bg-bottom-footer.png);
+    background-position: 0px 112px, right 0 bottom 0, left 50% top 80px, left 50% bottom 0, top center;
+    background-repeat: no-repeat;
+}
+
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .links a {
+    transition:0.5s;
+}
+
+.footer .links a:hover {
+  letter-spacing: 1px;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
