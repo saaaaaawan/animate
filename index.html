@@ -891,20 +891,20 @@
 
 
 <script>
-
-$.ajax({
-   url: "https://github.com/sawangoswami/animate/blob/main/object.json",
-    type:"get",
-    dataType:'json',  
-    success: function(data){
-      console.log(data);
-    },
-    error:function() {
-      console.log("err");
-    }
-});
-  
-  </script>
+if($ == jQuery) {  
+  $.ajax({
+     url: "https://github.com/sawangoswami/animate/blob/main/object.json",
+      type:"get",
+      dataType:'json',  
+      success: function(data){
+        console.log(data);
+      },
+      error:function() {
+        console.log("err");
+      }
+  });
+}  
+</script>
 
 
 
