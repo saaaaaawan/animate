@@ -890,21 +890,6 @@
 
 
 
-<script> {  
-  $.ajax({
-     url: "https://github.com/sawangoswami/animate/blob/main/object.json",
-      type:"get",
-      dataType:'json',  
-      success: function(data){
-        console.log(data)
-      },
-      error:function() {
-        console.log("err");
-      }
-  });
-}  
-</script>
-
 
 
 
@@ -936,6 +921,22 @@
 
           <!-- Template Javascript -->
           <script src="js/main.js"></script>
+  <script> {  
+  $.ajax({
+     url: "https://github.com/sawangoswami/animate/blob/main/object.json",
+      type:"get",
+      dataType:'text',  
+      success: function(data){
+        console.log(data)
+      },
+      error:function() {
+        console.log("err");
+      }
+  });
+}  
+</script>
+
+
         </body>
 
         </html>        
